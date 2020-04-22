@@ -51,7 +51,7 @@ document.querySelector('.btn-hold').addEventListener("click", function(){
     document.querySelector('.dice').style.display='none';
     document.querySelector('.player-0-panel').classList.remove('active');
     document.querySelector('.player-1-panel').classList.add('active');
-    if(score_0>=20)
+    if(score_0>=100)
     {document.querySelector('#name-0').textContent='Winner!';
     document.querySelector('.player-0-panel').classList.add('winner');
     gamePlaying=false;
@@ -66,7 +66,7 @@ else if(activePlayer==currentDOM1&&val!=1){
     document.querySelector('.dice').style.display='none';
     document.querySelector('.player-0-panel').classList.add('active');
     document.querySelector('.player-1-panel').classList.remove('active');
-    if(score_1>=20){document.querySelector('#name-1').textContent='Winner!';
+    if(score_1>=100){document.querySelector('#name-1').textContent='Winner!';
     document.querySelector('.player-1-panel').classList.add('winner');
     gamePlaying=false;
     document.querySelector('.player-0-panel').classList.remove('active')
@@ -75,7 +75,7 @@ else if(activePlayer==currentDOM1&&val!=1){
 })
 document.querySelector('.btn-new').addEventListener("click", function(){
     gamePlaying=true;
-    if(score_1>=20){
+    if(score_1>=100){
         document.querySelector('.player-1-panel').classList.remove('winner');
         document.querySelector('#name-1').textContent='PLAYER 2';
     }
